@@ -13,7 +13,8 @@ git push -u origin main
 
 git clone https://github.com/jchan0087/test_pygame -->
 
-# end-goal: build text based rpg
+## end-goal:
+    - Build fully functional adhs task managing app
 
-# current goal:
-    - learn how to make a text console with pygame that accepts inputs.
+## current goal:
+    - Setup initial repo
