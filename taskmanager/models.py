@@ -64,7 +64,7 @@ class Task:
                 f"""Task '{self.id}' has status '{self.status}' but no due_date."""
             )
 
-        # self._initial_state = copy.deepcopy(self.__dict__)
+        self._initial_state = copy.deepcopy(self.__dict__)
 
     def move_to_done(self, time_taken: int):
         """
@@ -76,10 +76,6 @@ class Task:
             f"""Task '{self.id}' moved to DONE.
             Time taken: {time_taken} minutes."""
         )
-
-    # def status_change(self):
-    #     old_status = self.status
-    #     if self.status not in
 
     def add_dependency(self, task_id: str):
         """
