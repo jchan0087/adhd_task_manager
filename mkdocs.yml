@@ -1,5 +1,11 @@
 site_name: ADHD task manager
+
+plugins:
+  - macros:
+          include_dir: .
+  - search
+
 nav:
-  - Home: index.md
-  - About: about.md
+  - ADHD task manager: index.md
+
 theme: material

@@ -2,9 +2,11 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-A smart task manager designed to reduce executive dysfunction by providing a clear, prioritized list of what to work on *next*.
+This is a free, open-source tool to help those with ADHD tackle their daily tasks, both at work and in their personal lives. The project was inspired by my 12-year-old son who, like me, has ADHD. We both find that traditional calendar and task apps are a constant struggle to manage.
 
-This project is built for individuals who struggle with task initiation and prioritization. Instead of you spending energy figuring out *what* to do, this tool does it for you, letting you focus your energy on *doing*.
+My hope is to build a tool that helps him—and others like us—struggle less with planning and focus more on living.
+
+---
 
 ## Core Philosophy
 
@@ -23,6 +25,7 @@ Traditional task managers often require you to estimate how long a task will tak
 * **Dual Interfaces:** Access your tasks how *you* work best:
     * **CLI:** A fast, keyboard-driven interface for your terminal.
     * **Web UI:** A visual, drag-and-drop Kanban-style board (planned).
+    * **Mobile App:** A future goal is to create a native app.
 
 ## Project Architecture
 
@@ -77,7 +80,7 @@ This project is under active development. Here is the high-level plan:
 - [ ] **`pyproject.toml`:** Create the project configuration and dependency file.
 - [ ] **CLI Entry Point:** Configure the file to make the `task` command available on `pip install`.
 - [ ] **Documentation:** Write final setup and usage instructions.
-- [ ] **Publish:** Publish the package to PyPI.
+- [ ] **Publish:** (Optional) Publish the package to PyPI.
 
 ## License
 
