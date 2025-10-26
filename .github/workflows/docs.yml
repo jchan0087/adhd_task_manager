@@ -46,7 +46,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install MkDocs and dependencies
-        run: pip install mkdocs mkdocs-material # Add any other plugins/themes you use
+        run: pip install mkdocs mkdocs-material mkdocs-macros-plugin # Add any other plugins/themes you use
 
       - name: Deploy MkDocs to GitHub Pages
         run: mkdocs gh-deploy --force
