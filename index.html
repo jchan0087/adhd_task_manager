@@ -1,0 +1,641 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>ADHD task manager</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adhd-task-manager-working-title" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="ADHD task manager" class="md-header__button md-logo" aria-label="ADHD task manager" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ADHD task manager
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ADHD task manager
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="ADHD task manager" class="md-nav__button md-logo" aria-label="ADHD task manager" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ADHD task manager
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ADHD task manager
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADHD task manager
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗺️ Project Roadmap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ Project Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-the-core-library-the-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Phase 1: The Core Library (The "Brain")
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-the-command-line-interface-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: The Command-Line Interface (CLI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-the-web-application-api-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: The Web Application (API + UI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-packaging-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Packaging &amp; Distribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗺️ Project Roadmap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ Project Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-the-core-library-the-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Phase 1: The Core Library (The "Brain")
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-the-command-line-interface-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: The Command-Line Interface (CLI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-the-web-application-api-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: The Web Application (API + UI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-packaging-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Packaging &amp; Distribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="adhd-task-manager-working-title">ADHD Task Manager (Working Title)</h1>
+<p><a href="https://jchan0087.github.io/adhd_task_manager/">Our static front page</a>
+<a href="https://www.gnu.org/licenses/gpl-3.0"><img alt="License: GPL v3" src="https://img.shields.io/badge/License-GPLv3-blue.svg" /></a></p>
+<p>This is a free, open-source tool to help those with ADHD tackle their daily tasks, both at work and in their personal lives. The project was inspired by my 12-year-old son who, like me, has ADHD. We both find that traditional calendar and task apps are a constant struggle to manage.</p>
+<p>My hope is to build a tool that helps him—and others like us—struggle less with planning and focus more on living.</p>
+<hr />
+<h2 id="core-philosophy">Core Philosophy</h2>
+<p>Traditional task managers often require you to estimate how long a task will take, which is a common challenge for those with ADHD. This project flips the script:</p>
+<ul>
+<li><strong>Prioritization First:</strong> Tasks are weighted by urgency, complexity, due date, and dependencies.</li>
+<li><strong>Clear "Next Step":</strong> The primary goal is for the tool to tell you the <em>single next task</em> to focus on.</li>
+<li><strong>Track, Don't Predict:</strong> You log the time a task took <em>after</em> you complete it, providing useful data without the upfront anxiety of estimation.</li>
+</ul>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Smart Prioritization Engine:</strong> Automatically sorts your <code>TODO</code> list based on a weighted algorithm.</li>
+<li><strong>Task Statuses:</strong> A workflow inspired by Kanban: <code>BACKLOG</code>, <code>TODO</code>, <code>IN_PROGRESS</code>, <code>BLOCKED</code>, and <code>DONE</code>.</li>
+<li><strong>Dependency Management:</strong> A task won't appear as "next" if its prerequisite tasks aren't <code>DONE</code>.</li>
+<li><strong>Persistent Storage:</strong> Your tasks are saved locally to a file, so you never lose your list.</li>
+<li><strong>Dual Interfaces:</strong> Access your tasks how <em>you</em> work best:<ul>
+<li><strong>CLI:</strong> A fast, keyboard-driven interface for your terminal.</li>
+<li><strong>Web UI:</strong> A visual, drag-and-drop Kanban-style board (planned).</li>
+<li><strong>Mobile App:</strong> A future goal is to create a native app.</li>
+</ul>
+</li>
+</ul>
+<h2 id="project-architecture">Project Architecture</h2>
+<p>This project is built with a clean, decoupled architecture, making it modular and easy to maintain.</p>
+<ol>
+<li>
+<p><strong>🧠 The Core Library (<code>taskmanager</code>)</strong></p>
+<ul>
+<li>A pure Python library containing all the "brains."</li>
+<li>Includes the <code>Task</code> model, the <code>TaskManager</code> class for managing the list, and the <code>Prioritizer</code> logic.</li>
+<li>This engine is totally independent of any user interface.</li>
+</ul>
+</li>
+<li>
+<p><strong>💻 The CLI (Command-Line Interface)</strong></p>
+<ul>
+<li>The first "head" for the core library.</li>
+<li>Uses <code>typer</code> (or <code>argparse</code>) to provide simple commands like <code>task next</code>, <code>task add</code>, and <code>task done</code>.</li>
+<li>Imports and calls the Core Library.</li>
+</ul>
+</li>
+<li>
+<p><strong>🖥️ The Web Application (API + UI)</strong></p>
+<ul>
+<li>The second "head" for the core library.</li>
+<li><strong>Backend API:</strong> A lightweight Flask/FastAPI server that wraps the Core Library in web endpoints (e.g., <code>GET /api/tasks/next</code>).</li>
+<li><strong>Frontend UI:</strong> A simple HTML/CSS/JavaScript single-page application that talks to the API to display a visual Kanban board.</li>
+</ul>
+</li>
+</ol>
+<h2 id="project-roadmap">🗺️ Project Roadmap</h2>
+<p>This project is under active development. Here is the high-level plan:</p>
+<h3 id="phase-1-the-core-library-the-brain">✅ Phase 1: The Core Library (The "Brain")</h3>
+<ul>
+<li>[x] <strong>Task Model (<code>models.py</code>):</strong> Define the <code>Task</code> data structure with statuses, dependencies, etc.</li>
+<li>[ ] <strong>Task Manager (<code>manager.py</code>):</strong> Create the <code>TaskManager</code> class to add, find, update, and hold tasks.</li>
+<li>[ ] <strong>Storage (<code>storage.py</code>):</strong> Implement saving/loading all tasks to a persistent JSON file.</li>
+<li>[ ] <strong>Prioritizer (<code>prioritizer.py</code>):</strong> Build the core logic to sort tasks by urgency, due date, complexity, and dependencies.</li>
+</ul>
+<h3 id="phase-2-the-command-line-interface-cli">Phase 2: The Command-Line Interface (CLI)</h3>
+<ul>
+<li>[ ] <strong>Command Parser:</strong> Set up <code>typer</code> or <code>argparse</code> to handle user input.</li>
+<li>[ ] <strong>Core Commands:</strong> Implement essential commands:<ul>
+<li>[ ] <code>task next</code></li>
+<li>[ ] <code>task list</code></li>
+<li>[ ] <code>task add</code></li>
+<li>[ ] <code>task start &lt;id&gt;</code></li>
+<li>[ ] <code>task done &lt;id&gt; --time &lt;minutes&gt;</code></li>
+<li>[ ] <code>task move &lt;id&gt; &lt;status&gt;</code></li>
+<li>[ ] <code>task show backlog</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="phase-3-the-web-application-api-ui">Phase 3: The Web Application (API + UI)</h3>
+<ul>
+<li>[ ] <strong>Web API (Backend):</strong><ul>
+<li>[ ] Set up Flask/FastAPI server.</li>
+<li>[ ] Create API endpoints for all core <code>TaskManager</code> functions.</li>
+</ul>
+</li>
+<li>[ ] <strong>Web UI (Frontend):</strong><ul>
+<li>[ ] Design basic HTML/CSS for a Kanban view.</li>
+<li>[ ] Write JavaScript to <code>fetch</code> data from the API and build the UI.</li>
+<li>[ ] Implement drag-and-drop functionality to change task status.</li>
+</ul>
+</li>
+</ul>
+<h3 id="phase-4-packaging-distribution">Phase 4: Packaging &amp; Distribution</h3>
+<ul>
+<li>[ ] <strong><code>pyproject.toml</code>:</strong> Create the project configuration and dependency file.</li>
+<li>[ ] <strong>CLI Entry Point:</strong> Configure the file to make the <code>task</code> command available on <code>pip install</code>.</li>
+<li>[ ] <strong>Documentation:</strong> Write final setup and usage instructions.</li>
+<li>[ ] <strong>Publish:</strong> (Optional) Publish the package to PyPI.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>This project is licensed under the <strong>GNU General Public License v3.0 (GPLv3)</strong>. This means it will always remain free and open-source. You are welcome to use, modify, and distribute it, but any derivative works must also be shared under the same license.</p>
+<h2 id="contributing">Contributing</h2>
+<p>(Placeholder) We welcome contributions! Please see <code>CONTRIBUTING.md</code> for details on how to get started, submit pull requests, and report bugs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
