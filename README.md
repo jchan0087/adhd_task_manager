@@ -1,5 +1,6 @@
 # ADHD Task Manager (Working Title)
 
+[Our static front page](https://jchan0087.github.io/adhd_task_manager/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 This is a free, open-source tool to help those with ADHD tackle their daily tasks, both at work and in their personal lives. The project was inspired by my 12-year-old son who, like me, has ADHD. We both find that traditional calendar and task apps are a constant struggle to manage.
